@@ -1,9 +1,11 @@
 # Docker-Applications
 
-To containerize your app, follow these steps
-Make sure you are in html-js-app folder on your system
+To containerize your apps follow these steps
+Make sure you are in the app folder on your system
+
+Docker build -t your-app-name .
+
+Docker container run -d --name app-name -p 8200:80 my-first app
 
 
-docker build -t my-first-app .
-docker container run --name=first-docker-cont -d -p 8500:80 my-first-app
 
